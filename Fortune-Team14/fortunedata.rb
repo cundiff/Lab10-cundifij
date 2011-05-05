@@ -1,4 +1,4 @@
-class FortuneData
+class Fortune
   $fortunes = ["There is a true and sincere friendship between you and your friends.",
     "You find beauty in ordinary things, do not lose this ability.",
     "Ideas are like children; there are none so wonderful as your own.",
