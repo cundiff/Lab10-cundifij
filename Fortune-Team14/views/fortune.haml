@@ -9,3 +9,11 @@
 	- if(@fortune)
 		.fortune
 			= @fortune
+			
+		
+			%form{:action => "", :method => "get"}
+				%input{:type => "submit", :id => "new_fortune", :value => "New Fortune"}
+				
+			
+			%form{:action => "", :method => "get"}
+				%input{:type => "text_field", :id => "specific_fortune", :value => ""}

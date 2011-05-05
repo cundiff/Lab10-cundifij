@@ -9,6 +9,11 @@ class Fortune < Sinatra::Base
     haml :fortune
   end
   
+  get '/fortune/get/:fid' do
+    @fortune = $fortunes[params[:fid]]
+    haml :fortune
+  end 
+  
 end
 
 
