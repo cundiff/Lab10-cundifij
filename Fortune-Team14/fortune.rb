@@ -6,12 +6,12 @@ class Fortune < Sinatra::Base
             
   get '/fortune/random/?' do
     @fortune = $fortunes[rand($fortunes.size)]
-    haml :fortune
+    haml :random
   end
 
   get '/fortune/get/:fid' do
     @fortune = $fortunes[params[:fid].to_i]
-    haml :fortune
+    haml :specific
   end 
   
 end

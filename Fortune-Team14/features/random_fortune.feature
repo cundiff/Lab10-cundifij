@@ -4,10 +4,10 @@ Feature: Random fortune
 	I want to be given random fortunes
 	
 	Scenario: Get a fortune
-	Given I am on fortunes
+	Given I am on random
 	Then I should see a fortune
 	
 	Scenario: Get a new fortune
-	Given I am on fortunes
+	Given I am on random 
 	When I press "New Fortune"
 	Then I should see a fortune
